@@ -1,0 +1,40 @@
+
+.customIcon_heart{
+    font-size: 2em;
+    opacity: 0.8;
+    padding-top:8px;
+    margin-left: 10%;
+}
+
+.customIcon_heart:hover{
+    opacity: 1;
+    color: red;
+    cursor: pointer;
+    
+}
+
+.customIcon_shopping{
+    font-size: 2em;
+    opacity: 0.8;
+    padding-top:8px;
+}
+
+.customIcon_shopping:hover{
+    opacity: 1;
+    cursor: pointer;
+    color: darkgoldenrod;
+}
+
+.custom_card:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: black;
+}
+
+.sep{
+    width: 100%;
+    height:1px;
+    background-color: black;
+    padding-top: 2px;
+    margin-top: 4px;
+}
