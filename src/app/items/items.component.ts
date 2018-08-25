@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Item} from '../Item';
 import {trigger,style,transition,animate,keyframes,query,stagger} from '@angular/animations';
+import {ItemsService} from '../items.service';
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
@@ -24,7 +25,8 @@ import {trigger,style,transition,animate,keyframes,query,stagger} from '@angular
               style({opacity:0,transform:'translateY(-75%)',offset:1}),
             ]))]),{optional:true})
       ])
-    ])
+    ]),
+
   ]
 })
 export class ItemsComponent implements OnInit {
@@ -91,14 +93,15 @@ export class ItemsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
-  addItem(){
-
+  getItems(){
+    return this.Items;
   }
 
-  removeItem(){
-
-  }
+  // addItemToCart(item:Item){
+  //   this.itemsSerivce.getItemsCart().push(item);
+  // }
 
 }

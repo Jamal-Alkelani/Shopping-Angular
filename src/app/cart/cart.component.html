@@ -1,0 +1,28 @@
+<div class="container" >
+    <br><br><br><br>
+    <div class="row" [@fuck]="Items.length" >
+      <div  class="card shadow p-3 mb-5 bg-white rounded custom_card" style="width: 16rem;height: 350px;margin-right: 16px;" *ngFor="let m of Items" >
+          <img class="card-img-top " src={{m.imageUrl}}  >
+          <div class="card-body">
+            <div class="row">
+              <div class="col-8">{{m.name}}</div>
+              <div class="col-4">{{m.price}} $</div>
+            </div>
+            <div class="row">
+              
+                <div class="sep"></div>
+              
+            </div>
+            <div class="row">
+                <div class="col-4 customIcon_heart">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="col-1" style="padding-top:16px;">|</div>
+                <div class="col-4 customIcon_shopping">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
